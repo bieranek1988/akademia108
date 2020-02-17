@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selektory CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- selektor znacznika -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates error sequi, itaque odio possimus tempora nesciunt nam, illo.
+    </p>
+
+    <!-- selektor id -->
+    <p id="id-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero labore, autem nobis incidunt sed maiores soluta nisi expedita.
+    </p>
+
+    <!-- łączenie selektorów -->
+    <!-- a.link[href="#"]{Link} -->
+    <a href="#" class="link">Link</a>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolor necessitatibus possimus facilis aperiam illo voluptate animi nostrum.</span>
+    <h3 id="title">Tytuł ID</h3>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis impedit quidem minima unde ut esse laborum assumenda architecto.</div>
+
+    <div id="potomek-bezposredni">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit accusantium quos asperiores. Placeat magnam, necessitatibus soluta dicta aliquam.
+        </p>
+        <div class="potomek-bezposredni-item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quia similique nihil ea, magnam excepturi dolores voluptate earum, necessitatibus sint reiciendis nulla eum repudiandae, id mollitia. Distinctio nostrum, sapiente impedit deserunt, commodi cumque quae quasi consequatur.
+        </div>
+    </div>
+
+    <!-- selektor wszystkich elementów potomnych -->
+    <ul id="lista">
+        <li><a href="http://google.pl">Google</a></li>
+        <li><a href="http://google.pl">Google</a></li>
+        <li><a href="http://google.pl">Google</a></li>
+        <li><a href="http://google.pl">Google</a></li>
+        <li><a href="http://google.pl">Google</a></li>
+    </ul>
+    
+    <!-- selektor konkretnego elementu -->
+    <ul id="lista2">
+        <li>lista 0001</li>
+        <li>lista 0002</li>
+        <li>lista 0003</li>
+        <li>lista 0004</li>
+        <li>lista 0005</li>
+        <li>lista 0006</li>
+        <li>lista 0007</li>
+        <li>lista 0008</li>
+    </ul>
+    
+    <ul id="lista3">
+        <li>lista 0001</li>
+        <li>lista 0002</li>
+        <li>lista 0003</li>
+        <li>lista 0004</li>
+        <li>lista 0005</li>
+        <li>lista 0006</li>
+        <li>lista 0007</li>
+        <li>lista 0008</li>
+    </ul>
+    
+    <!-- selektor bliskiego rodzeństwa -->
+    <header>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h3>Lorem 1 title</h3>
+        <h3>Lorem 2 title</h3>
+        <h3>Lorem 3 title</h3>
+    </header>
+    
+    <!-- selektor rodzeństwa -->
+    <section>
+        <h2>Section Lorem ipsum dolor sit amet.</h2>
+        <h3>Section Lorem 1 title</h3>
+        <h3>Section Lorem 2 title</h3>
+        <h3>Section Lorem 3 title</h3>
+    </section>
+    
+    <!-- selektor rodzeństwa -->
+    <ul>
+        <li class="list-item">Lorem list</li>
+        <li class="list-item">Lorem list</li>
+        <li class="list-item">Lorem list</li>
+        <li class="list-item">Lorem list</li>
+        <li class="list-item">Lorem list</li>
+        <li class="list-item last-item">Lorem list</li>
+    </ul>
+    
+    <p class="paragraf" id="id-paragraf"></p>
+    
+<!-- * < p < .paragraf < #id-paragraf < style < !important  -->
+
+</body>
+
+</html>

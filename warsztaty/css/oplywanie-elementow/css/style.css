@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+img#truskawka1 {
+    float: left;
+}
+
+img#truskawka2 {
+    float: right;
+}
+
+p:last-child {
+    clear: right;
+}
